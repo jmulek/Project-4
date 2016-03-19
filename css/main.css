@@ -7,6 +7,8 @@
 
 body {
   font-size: 16px;
+	background-color: aliceblue;
+	color:darkslategray;
 }
 .container {
   margin: 0 auto;
@@ -14,16 +16,18 @@ body {
 }
 h1 {
   text-align: center;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 #search input {
   clear: both;
-    display: block;
-    margin: 30px auto 23px;
-    width: 460px;
-    height: 47px;
-    border-radius: 5px;
-    border: 2px solid #E5E5E5;
+  display: block;
+  margin: 30px auto 23px;
+  width: 460px;
+  height: 47px;
+  border-radius: 5px;
+  border: 2px solid lightgrey;
   padding-left: 10px;
   font-size: 1em;
   box-sizing: border-box;
@@ -44,7 +48,13 @@ h1 {
 
 #lightgallery a img {
   width: 100%;
-    box-shadow:0 1px 4px #adadad, 0 0 40px  #e6e6e6 inset;
+  box-shadow:0 1px 4px #000, 0 0 40px  #e6e6e6 inset;
+	border-radius: 10%;
+}
+#lightgallery a img:hover {
+	transform: scale(1.2);
+	box-shadow:0 3px 15px #000, 2px 2px 70px  #e6e6e6 inset;
+	border-radius: 20%;
 }
 
 .clearfix:after {
